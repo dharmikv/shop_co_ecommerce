@@ -24,6 +24,7 @@
 }
 .content-xlarge{
     @apply text-24 leading-32 font-Satoshi
+        smscreen:text-20 smscreen:leading-27
 }
 .content-small p,
 .content-medium p,
