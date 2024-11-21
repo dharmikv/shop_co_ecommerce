@@ -1663,8 +1663,8 @@ nav ul .nav-link:last-child {
 
 @media (max-width: 1440px) {
   .tesimonial_swiper_content {
-    margin-left: -22%;
-    margin-right: -22%;
+    margin-left: -24%;
+    margin-right: -24%;
   }
 }
 
@@ -1685,6 +1685,8 @@ nav ul .nav-link:last-child {
 
 .customer_review_slider .swiper-slide {
   height: auto;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
   max-width: 400px;
 }
 
@@ -1788,6 +1790,23 @@ nav ul .nav-link:last-child {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* .tesimonial_swiper_content{
+    @apply relative
+} */
+
+/* .tesimonial_swiper_content::before{
+    content: "";
+    @apply absolute top-0 left-0 h-full w-[400px] backdrop-blur-[2px] z-10;
+    background: url(../images/png/layer_blur.png); 
+    background-size: cover;
+}
+.tesimonial_swiper_content::after{
+    content: "";
+    @apply absolute top-0 right-0 h-full w-[400px] backdrop-blur-[2px] z-10;
+    background: url(../images/png/layer_blur.png); 
+    background-size: cover;
+} */
+
 .group:hover .group-hover\:block {
   display: block;
 }
@@ -1838,10 +1857,6 @@ nav ul .nav-link:last-child {
 
   .lgscreen\:items-start {
     align-items: flex-start;
-  }
-
-  .lgscreen\:items-center {
-    align-items: center;
   }
 
   .lgscreen\:justify-normal {

@@ -254,7 +254,7 @@ nav ul .nav-link:last-child{
     @apply overflow-hidden
 }
 .tesimonial_swiper_content{
-    @apply -ml-[6%] -mr-[6%] 2xlscreen:-ml-[22%] 2xlscreen:-mr-[22%] lgscreen:-ml-0 lgscreen:-mr-0
+    @apply -ml-[6%] -mr-[6%] 2xlscreen:-ml-[24%] 2xlscreen:-mr-[24%] lgscreen:-ml-0 lgscreen:-mr-0
 }
 .customer_review_star{
     @apply me-1.5
@@ -263,7 +263,7 @@ nav ul .nav-link:last-child{
     @apply me-0
 }
 .customer_review_slider .swiper-slide{
-    @apply max-w-[400px] h-auto
+    @apply !w-fit max-w-[400px] h-auto
 }
 .customer_review_slider .swiper-wrapper{
     @apply !w-full
@@ -304,3 +304,18 @@ nav ul .nav-link:last-child{
 .footer-links a:hover{
     @apply text-Black-100 transition-all duration-300 ease-out
 }
+/* .tesimonial_swiper_content{
+    @apply relative
+} */
+/* .tesimonial_swiper_content::before{
+    content: "";
+    @apply absolute top-0 left-0 h-full w-[400px] backdrop-blur-[2px] z-10;
+    background: url(../images/png/layer_blur.png); 
+    background-size: cover;
+}
+.tesimonial_swiper_content::after{
+    content: "";
+    @apply absolute top-0 right-0 h-full w-[400px] backdrop-blur-[2px] z-10;
+    background: url(../images/png/layer_blur.png); 
+    background-size: cover;
+} */

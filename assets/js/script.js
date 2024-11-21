@@ -42,16 +42,16 @@ var customer_review_slider = new Swiper(".customer_review_slider",{
     centerSlides:true,
     breakpoints:{
         768:{
-            slidesPerView:2
+            slidesPerView:2,
         },
         1024:{
-            slidesPerView:3
+            slidesPerView:3,
         },
         1280:{
-            slidesPerView:4
+            slidesPerView:4,
         },
         1440:{
-            slidesPerView:5
+            slidesPerView:5,
         }
     },
     navigation: {
