@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/dist/style.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+   <!-- ======================================== HEADER ========================================   -->
+
+   <header class="sticky top-0 z-20 header w-full">
+        <div class="innerheader">
+            <div class="container-fluid bg-Black-100 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="content-medium content-white w-full font-400">
+                        <p class="flex w-full justify-center">Sign up and get 20% off to your first order.
+                            <a href="#" class="ms-1">Sign Up Now</a>
+                        </p>
+                    </div>
+                    <button class="hide_inner_div min-w-5 min-h-5 mdscreen:hidden" >
+                        <img src="../assets/images/svg/close.svg" class="min-w-5 min-h-5" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="container-fluid flex items-center py-24 smscreen:justify-between">
+            <div class="flex items-center mdscreen:max-w-[190px] justify-between">
+                <button class="mt-2 hidden mdscreen:flex min-w-5 min-h-5 w-5 h-5">
+                    <img src="../assets/images/svg/hamburger_menu.svg" class="min-w-5 min-h-5" alt="">
+                </button>
+               <div class="navbar_logo mdscreen:ms-2">
+                    <a href="#">
+                        <div class="title title-black font-dark">
+                            <h6>SHOP.CO</h6>
+                        </div>
+                    </a>
+               </div>
+               <div class="navbar_links mx-10">
+                <ul class="flex items-center mt-2 mdscreen:hidden">
+                    <li class="nav-link relative group">
+                        <a href="#" class="flex items-center">
+                            Shop
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <ul class="absolute left-0 hidden mt-1 p-2 border-2 border-DarkGrey bg-White border rounded-10 group-hover:block">
+                            <li><a href="#" class="drop-downlink">Men</a></li>
+                            <li><a href="#" class="drop-downlink">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link"><a href="#">On Sale</a></li>
+                    <li class="nav-link"><a href="#">New Arrivals</a></li>
+                    <li class="nav-link"><a href="#">Brands</a></li>
+                </ul>                
+               </div>
+            </div>
+            <div class="mt-2 flex-grow me-10 mdscreen:ms-10 smscreen:hidden">
+                <form class="search_input w-full flex">
+                    <img src="../assets/images/svg/search.svg" class="search_icon" alt="search_icon">
+                    <input type="text" name="search" id="search" placeholder="Search for products...">
+                </form>
+            </div>
+            <div class="flex justify-end mt-2">
+                <a href="#">
+                    <div class="me-3">
+                        <img src="../assets/images/svg/cart_icon.svg" alt="cart_icon">
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <img src="../assets/images/svg/profile_icon.svg" alt="profile_icon">
+                    </div>
+                </a>
+            </div>
+        </nav>
+   </header>
+
+   <main>
+        <!-- ======================================== HERO SECTION ========================================   -->
+
+        <section class="hero_section bg-DarkGrey pt-5rem mdscreen:pt-3rem xsscreen:pt-2rem">
+            <div class="container-fluid">
+                <div class="flex w-full items-center mdscreen:flex-col mdscreen:items-start">
+                    <div class="w-6/12 mdscreen:w-full">
+                        <div class="banner_content">
+                            <div class="title title-black font-dark max-w-[577px]">
+                                <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                            </div>
+                            <div class="content-regular content-black-medium max-w-[545px] mt-8 lgscreen:mt-5">
+                                <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                            </div>
+                            <div class="mt-8 lgscreen:mt-5 xsscreen:w-full">
+                                <a href="#" class="btn btn-black xsscreen:w-full text-center">Shop Now</a>
+                            </div>
+                            <div class="grid grid-cols-3 gap-6 xlscreen:grid-cols-2 mdscreen:grid-cols-3 mdscreen:w-full smscreen:justify-items-center xsscreen:grid-cols-2 w-fit mt-8 lgscreen:mt-5">
+                                <div class="flex flex-col border-r-1 border-r-Black-10 mdscreen:pe-6">
+                                    <div class="title-satoshi title-black font-dark">
+                                        <h3>200+</h3>
+                                    </div>
+                                    <div class="content-regular content-black-medium whitespace-nowrap">
+                                        <p>International Brands</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col mdscreen:pe-6 xsscreen:px-0 border-r-1 border-r-Black-10 xsscreen:border-none">
+                                    <div class="title-satoshi title-black font-dark">
+                                        <h3>2000+</h3>
+                                    </div>
+                                    <div class="content-regular content-black-medium">
+                                        <p>High-Quality Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col lgscreen:ps-0 xsscreen:col-span-2 justify-self-center">
+                                    <div class="title-satoshi title-black font-dark">
+                                        <h3>30,000+</h3>
+                                    </div>
+                                    <div class="content-regular content-black-medium">
+                                        <p>Happy Customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6/12 mdscreen:w-full relative">
+                        <div class="hero_section_img flex justify-center">
+                            <img src="../assets/images/png/herosection_img.png" alt="">
+                        </div>
+                        <div class="absolute top-[40%]">
+                            <img src="../assets/images/svg/sparkle_one.svg" alt="">
+                        </div>
+                        <div class="absolute top-[14%] right-[2%] xsscreen:top-[5%] xsscreen:-right-2">
+                            <img src="../assets/images/svg/sparkle_two.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== BRAND GALLERY SECTION ========================================   -->
+
+        <section class="brand_gallery_section py-5rem mdscreen:py-3rem xsscreen:py-2rem bg-Black-100">
+            <div class="container-fluid flex justify-between items-center gap-x-8 whitespace-nowrap brand_gallery overflow-hidden">
+                <div>
+                    <img src="../assets/images/svg/varsace.svg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/images/svg/zara.svg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/images/svg/gucci.svg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/images/svg/prada.svg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/images/svg/calvin_klien.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== NEW ARRIVAL SECTION ========================================   -->
+
+        <section class="new_arrival_section py-4rem mdscreen:py-3rem xsscreen:pt-2rem">
+            <div class="container-fluid">
+                <div class="title title-black w-full flex justify-center font-dark">
+                    <h2>NEW ARRIVALS</h2>
+                </div>
+                <div class="swiper new_arrival_swiper w-full h-full mt-14 xsscreen:mt-8">
+                    <div class="swiper-wrapper">
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                            <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey product_image">
+                                <img src="../assets/images/png/Tshirt.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>t-shirt with Tape Details</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/half_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>4.5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$120</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                           <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/Jeans.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>skinny fit jeans</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/half_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>3.5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="flex items-center content-xlarge font-dark">
+                                        <p>$240</p>
+                                        <span class="content-black-light ms-2 line-through">$260</span>
+                                        <div class="chip chip-red ms-2">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                            <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/checked_shirt.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>checked shirt</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/half_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>4.5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$180</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                            <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/orange_tshirt.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>sleeve striped t-shirt</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/half_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>4.5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="price mt-2">
+                                    <div class="flex items-center content-xlarge font-dark">
+                                        <p>$130</p>
+                                        <span class="content-black-light ms-2 line-through">$160</span>
+                                        <div class="chip chip-red ms-2">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                            <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/checked_shirt.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>checked shirt</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/half_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>4.5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$180</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="mt-14 xsscreen:mt-6 w-full flex justify-center">
+                    <a href="#" class="btn btn-border smscreen:w-full smscreen:text-center">View All</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ======================================== SEPERATOR LINE ========================================   -->
+
+        <section class="seperator_line container-fluid">
+            <div class="bg-Black-10 h-1px"></div>
+        </section>
+
+        <!-- ======================================== TOP SELLING SECTION ========================================   -->
+
+        <section class="top_selling_section pt-4rem mdscreen:pt-3rem">
+            <div class="container-fluid">
+                <div class="title title-black w-full flex justify-center font-dark">
+                    <h2>top selling</h2>
+                </div>
+                <div class="swiper top_selling_slider w-full h-full mt-14 smscreen:mt-8">
+                    <div class="swiper-wrapper">
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                           <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/lined_shirt.png" class="rounded-20 aspect-square w-full h-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>vertical striped shirt</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="flex items-center content-xlarge font-dark">
+                                        <p>$212</p>
+                                        <span class="content-black-light ms-2 line-through">$232</span>
+                                        <div class="chip chip-red ms-2">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                           <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/orng_tshirt.png" class="rounded-20 aspect-square w-full h-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>Courage graphic t-shirt</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>4/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$145</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                           <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/jeans_short.png" class="rounded-20 aspect-square w-full h-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>loose fit bermuda shorts</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>3/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$80</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                           <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/black_jeans.png" class="rounded-20 aspect-square w-full h-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>sleeve striped t-shirt</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/half_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>4.5/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$210</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="w-full lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-normal">
+                           <div class="min-w-[295px] xsscreen:min-w-[unset] flex justify-center items-center rounded-20 bg-SemiGrey">
+                                <img src="../assets/images/png/jeans_short.png" class="rounded-20 aspect-square w-full h-full" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <div class="content-large capitalize font-dark">
+                                    <p>loose fit bermuda shorts</p>
+                                </div>
+                                <div class="ratings flex items-center mt-2">
+                                    <div class="flex items-center">
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                        <div class="rating_star">
+                                            <img src="../assets/images/svg/full_star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center ms-3">
+                                        <div class="content-medium content-black">
+                                            <p>3/<span class="content-black-medium">5</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price mt-2">
+                                    <div class="content-xlarge font-dark">
+                                        <p>$80</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="mt-14 xsscreen:mt-6 w-full flex justify-center">
+                    <a href="#" class="btn btn-border smscreen:w-full smscreen:text-center">View All</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ======================================== BENTO_GRID_SECTION ========================================   -->
+
+        <section class="bento_grid_section container-fluid pt-5rem mdscreen:pt-3rem ">
+           <div class="rounded-40 bg-LightGrey p-65 xlscreen:p-56 lgscreen:p-40 mdscreen:p-32 smscreen:p-24">
+            <div class="title title-black font-dark text-center ">
+                <h2>Browse by dress style</h2>
+            </div>
+            <div class="bento_grid_section flex smscreen:flex-col w-full mt-16 xsscreen:mt-7 gap-5">
+                <div class="smscreen:w-full mdscreen:w-1/2 w-2/5 bento_grid_one rounded-20 relative">
+                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-5/12 bento_grid_one rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
+                    <img src="../assets/images/png/bento_grid_one.png" class="relative w-full h-full object-cover rounded-20" alt="">
+                    <div class="title-satoshi font-dark absolute inset-[8%]">
+                        <h4>Casual</h4>
+                    </div>
+                </div>
+                <div class="smscreen:w-full mdscreen:w-1/2 w-3/5 bento_grid_two rounded-20 relative">
+                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-7/12 bento_grid_two rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
+                    <img src="../assets/images/png/bento_grid_two.png" class="relative w-full h-full object-cover rounded-20" alt="">
+                    <div class="title-satoshi font-dark absolute inset-[8%]">
+                        <h4>Formal</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="bento_grid_section flex smscreen:flex-col w-full gap-5 mt-5">
+                <div class="smscreen:w-full mdscreen:w-1/2 w-3/5 bento_grid_three rounded-20 relative">
+                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-7/12 bento_grid_three rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
+                    <img src="../assets/images/png/bento_grid_three.png" class="relative w-full h-full object-cover rounded-20" alt="">
+                    <div class="title-satoshi font-dark absolute inset-[8%]">
+                        <h4>Party</h4>
+                    </div>
+                </div>
+                <div class="smscreen:w-full mdscreen:w-1/2 w-2/5 bento_grid_four rounded-20 relative">
+                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-5/12 bento_grid_four rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
+                    <img src="../assets/images/png/bento_grid_four.png" class="relative w-full h-full object-cover rounded-20" alt="">
+                    <div class="title-satoshi font-dark absolute inset-[8%]">
+                        <h4>Gym</h4>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <!-- ======================================== CUSTOMER_REVIEW ========================================   -->
+
+        <section class="customer_review_section py-5rem mdscreen:py-3rem xsscreen:2rem">
+            <div class="container-fluid flex justify-between items-center">
+                <div class="title title-black font-dark">
+                    <h2>OUR HAPPY CUSTOMERS</h2>
+                </div>
+                <div class="flex">
+                    <div class="tesimonial_left_arrow cursor-pointer">
+                        <img src="../assets/images/svg/arrow_left.svg" alt="">
+                    </div>
+                    <div class="tesimonial_right_arrow ms-3.5 cursor-pointer">
+                        <img src="../assets/images/svg/arrow_right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tesimonial_swiper_content">
+                <div class="swiper customer_review_slider mt-10 xsscreen:mt-6">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Sarah M.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3 ">
+                                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Sarah M.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10 rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Alex K.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>James L.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Mooen M.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Sarah M.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Alex K.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>James L.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="border-1 border-Black-10  rounded-20 p-32 review">
+                            <div class="flex flex-col">
+                                <div class="flex">
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                    <div class="customer_review_star">
+                                        <img src="../assets/images/svg/full_star.svg" class="w-22px h-22px" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <div class="content-large content-black font-dark ">
+                                        <p>Mooen M.</p>
+                                    </div>
+                                    <div class="ms-1.5">
+                                        <img src="../assets/images/svg/verified_tick.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-regular content-black-medium mt-3">
+                                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   </main>
+
+    <!-- ======================================== FOOTER ========================================   -->
+
+   <footer class="footer">
+        <div class="container-fluid">
+            <div class="bg-Black-100 w-full relative rounded-20  p-64 xlscreen:p-56 lgscreen:p-40 mdscreen:p-32 smscreen:p-24">
+               <div class="flex items-center justify-between lgscreen:flex-col lgscreen:items-start">
+                    <div class="max-w-[551px]">
+                        <div class="title title-white font-dark">
+                            <h3>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[349px] smscreen:w-full lgscreen:mt-8">
+                        <form class="form">
+                            <div class="email_input w-full flex">
+                                <img src="../assets/images/svg/email_envelop.svg" class="email_input_icon" alt="email_input_icon">
+                                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            </div>
+                            <div class="w-full mt-4 lgscreen:mt-3">
+                                <button type="submit" class="btn btn-white w-full text-center whitespace-nowrap">Subscribe to Newsletter</button>
+                            </div>
+                        </form>
+                    </div>
+               </div>
+            </div>
+            <div class="footer_content relative mt-52 xsscreen:mt-8">
+               <div class="grid grid-cols-5  lgscreen:grid-cols-4 mdscreen:grid-cols-2 w-full gap-8 justify-items-center lgscreen:justify-items-start">
+                    <div class="max-w-[248px] mdscreen:w-full lgscreen:col-span-4 mdscreen:col-span-2 justify-self-start">
+                        <a href="#">
+                            <img src="../assets/images/png/footer_logo.png" alt="">
+                        </a>
+                        <div class="content-medium content-black-medium mt-25">
+                            <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        </div>
+                        <div class="social_icons flex items-center mt-35">
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/twitter.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/facebook.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/instagram.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/github.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>Company</p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">About</a>
+                                <a href="#">Features</a>
+                                <a href="#">Works</a>
+                                <a href="#">Career</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>Help</p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">Customer Support</a>
+                                <a href="#">Delivery Details</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>FAQ</p>
+                        </div>
+                         <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">Account</a>
+                                <a href="#">Manage Deliveries</a>
+                                <a href="#">Orders</a>
+                                <a href="#">Payments</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>Resources</p>
+                        </div>
+                         <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">Free eBooks</a>
+                                <a href="#">Development Tutorial</a>
+                                <a href="#">How to - Blog</a>
+                                <a href="#">Youtube Playlist</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="seperator_line relative mb-25 mt-12">
+                <div class="bg-Black-10 h-1px"></div>
+            </div>
+            <div class="relative flex smscreen:flex-col justify-between items-center mt-5">
+                <div class="content-medium content-black-medium">
+                    <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                </div>
+                <div class="flex items-center smscreen:mt-4">
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/visa.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/mastercard.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/paypal.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/apple_pay.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/gpay.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="../assets/js/script.js"></script>
+   
+</body>
+</html>

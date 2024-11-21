@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== CONTAINER_FLUID ========================================================== */
+.container-fluid {
+    @apply mdscreen:px-20 xlscreen:px-40 px-100;
+}
+    
+
+/* ========================================================== CONTENT ========================================================== */
+.content-small{
+    @apply text-12 leading-16 font-Satoshi
+}
+.content-medium{
+    @apply text-14 mdscreen:text-12 leading-18 font-Satoshi
+}
+.content-regular{
+    @apply text-16 leading-content font-Satoshi
+}
+.content-large{
+    @apply text-20 leading-27 font-Satoshi
+        smscreen:text-16 smscreen:leading-content
+}
+.content-xlarge{
+    @apply text-24 leading-32 font-Satoshi
+}
+.content-small p,
+.content-medium p,
+.content-regular p
+{
+    @apply mt-2
+}
+.content-small p:first-child,
+.content-medium p:first-child,
+.content-regular p:first-child{
+    @apply mt-0
+}
+
+.content-white{ 
+    @apply text-White
+}
+.content-black-light{
+    @apply text-Black-40
+}
+.content-black-medium{
+    @apply text-Black-60
+}
+.content-black{
+    @apply text-Black-100
+}
+.content-red{
+    @apply text-Red
+}
+
+/* ========================================================== TITLE ========================================================== */
+
+.title h1,
+.title-satoshi h1{
+    @apply text-64 leading-64
+        xlscreen:text-56 xlscreen:leading-54
+        lgscreen:text-48 lgscreen:leading-48
+        mdscreen:text-40 mdscreen:leading-40
+        smscreen:text-36 smscreen:leading-38
+}
+.title h2,
+.title-satoshi h2{
+    @apply text-48 leading-58
+        xlscreen:text-40 xlscreen:leading-40
+        lgscreen:text-38 lgscreen:leading-38
+        mdscreen:text-36 mdscreen:leading-38
+        smscreen:text-32 smscreen:leading-36
+}
+.title h3,
+.title-satoshi h3{
+    @apply text-40 leading-54
+        xlscreen:text-36 xlscreen:leading-38
+        lgscreen:text-32 lgscreen:leading-36
+        mdscreen:text-30 mdscreen:leading-34
+        smscreen:text-24 smscreen:leading-32
+}
+.title h4,
+.title-satoshi h4{
+    @apply text-36 leading-48
+        xlscreen:text-32 xlscreen:leading-38
+        lgscreen:text-30 lgscreen:leading-36 
+        mdscreen:text-28 mdscreen:leading-34
+        smscreen:text-24 smscreen:leading-32
+}
+.title h5,
+.title-satoshi h5{
+    @apply text-32 leading-40
+}
+.title h6,
+.title-satoshi h6{
+    @apply text-32
+}
+
+
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6
+{
+    @apply font-Integral
+}
+.title-satoshi h1,
+.title-satoshi h2,
+.title-satoshi h3,
+.title-satoshi h4,
+.title-satoshi h5,
+.title-satoshi h6
+{
+    @apply font-Satoshi
+}
+
+.title-white h1,
+.title-white h2,
+.title-white h3,
+.title-white h4,
+.title-white h5,
+.title-white h6
+{
+    @apply text-White
+}
+.title-black h1,
+.title-black h2,
+.title-black h3,
+.title-black h4,
+.title-black h5,
+.title-black h6
+{
+    @apply text-Black-100
+}
+/* ========================================================== FONT_WEIGHT ========================================================== */
+
+.font-normal{
+    @apply font-400
+}
+.font-medium{
+    @apply font-500
+}
+.font-dark{
+    @apply font-700
+}
+/* ========================================================== BUTTON ========================================================== */
+
+.btn{
+    @apply rounded-62 py-16 px-67 font-Satoshi inline-block border-1 border-Black-100 text-16 smscreen:text-14
+}
+.btn-black{
+    @apply bg-Black-100 text-White transition-all ease-out duration-300
+}
+.btn-black:hover{
+    @apply bg-transparent text-Black-100 transition-all ease-out duration-300
+}
+.btn-border{
+    @apply bg-White text-Black-100 border-1 border-Black-10 transition-all ease-out duration-300
+}
+.btn-border:hover{
+    @apply bg-Black-100 text-White border-1 border-Black-100 transition-all ease-out duration-300
+}
+.btn-white{
+    @apply bg-White text-Black-100 transition-all ease-out duration-300
+}
+.btn-white:hover{
+    @apply bg-Black-100 border-1 border-White text-White
+}
+/* ========================================================== CHIP ========================================================== */
+
+.chip{
+    @apply px-3.5 text-12 w-fit rounded-62 font-500
+}
+.chip-red{
+    @apply bg-lightRed text-Red
+}
+
+/* ========================================================== HEADER ========================================================== */
+
+
+.is-sticky {
+    animation: headerStickyAnimation 0.5s ease-in-out;
+    @apply fixed top-0 left-0 w-full z-[50] transition-all duration-500 bg-White/70 shadow-md backdrop-blur-[35px]
+}
+@keyframes headerStickyAnimation {
+    0% {
+      opacity: 0.5;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/* ========================================================== INNER_HEADER ========================================================== */
+
+.innerheader a{
+    @apply underline
+}
+.nav-link{
+    @apply font-Satoshi text-nowrap
+}
+.nav-link a{
+    @apply text-Black-100 transition-all duration-300 ease-out
+}
+.nav-link a:hover{
+    @apply text-Black-40 transition-all duration-300 ease-out
+}
+nav ul .nav-link{
+    @apply me-6
+}
+nav ul .nav-link:last-child{
+    @apply me-0
+}
+.drop-downlink{
+    @apply block px-4 py-2 mb-2
+}
+.drop-downlink:last-child{
+    @apply mb-0
+}
+.search_input{
+    @apply rounded-62 p-3 bg-DarkGrey font-Satoshi w-full text-Black-40
+}
+.search_input input{
+    @apply bg-transparent focus-visible:outline-none
+}
+.search_icon,.email_input_icon{
+    @apply px-2
+}
+.email_input{
+    @apply rounded-62 p-4 bg-White font-Satoshi w-full text-Black-40
+}
+.email_input input{
+    @apply bg-transparent focus-visible:outline-none w-full
+}
+/* ========================================================== NEW ARRIVAL ========================================================== */
+
+.rating_star{
+    @apply me-0.5
+}
+.rating_star:last-child{
+    @apply me-0
+}
+/* .new_arrival_swiper .swiper-slide{
+    @apply xsscreen:!w-fit
+} */
+
+/* ========================================================== TESIMONIAL SECTION ========================================================== */
+
+.customer_review_section{
+    @apply overflow-hidden
+}
+.tesimonial_swiper_content{
+    @apply -ml-[6%] -mr-[6%] 2xlscreen:-ml-[22%] 2xlscreen:-mr-[22%] lgscreen:-ml-0 lgscreen:-mr-0
+}
+.customer_review_star{
+    @apply me-1.5
+}
+.customer_review_star:last-child{
+    @apply me-0
+}
+.customer_review_slider .swiper-slide{
+    @apply max-w-[400px] h-auto
+}
+.customer_review_slider .swiper-wrapper{
+    @apply !w-full
+}
+.review{
+    @apply h-full
+}
+
+/* ========================================================== FOOTER SECTION ========================================================== */
+.social_icons a{
+    @apply me-3
+}
+.social_icons a:last-child{
+    @apply me-0
+}
+.footer_social_icon{
+    @apply border-1 border-Black-20 p-2 bg-White rounded-20
+}
+.footer_social_icon:hover{
+    @apply bg-Black-100 border-1 border-Black-100
+}
+.footer_social_icon:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7444%) hue-rotate(298deg) brightness(107%) contrast(106%);
+}
+.footer{
+    @apply relative
+}
+.footer::before{
+    content: "";
+    @apply absolute top-20per lgscreen:top-18per mdscreen:top-15per smscreen:top-13per left-0 h-[85%] xlscreen:h-[85%] mdscreen:h-[90%] w-full bg-LightGrey
+}
+.footer-links a{
+    @apply mt-3 transition-all duration-300 ease-out
+}
+.footer-links a:first-child{
+    @apply mt-0
+}
+.footer-links a:hover{
+    @apply text-Black-100 transition-all duration-300 ease-out
+}
