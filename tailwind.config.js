@@ -94,6 +94,10 @@ module.exports = {
         xsscreen: { max: "426px" },
         "2xsscreen":{max:"375px"},
       },
+      filter: {
+        sidebar_close: 'brightness(0) saturate(100%) invert(0%) sepia(9%) saturate(7500%) hue-rotate(150deg) brightness(107%) contrast(107%)',
+        footer_icons: 'brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7444%) hue-rotate(298deg) brightness(107%) contrast(106%)',
+      },
       borderWidth: {
         1: '1px',
         2: '2px',
@@ -146,6 +150,7 @@ module.exports = {
         "1rem":"1rem",
       },
       margin:{
+        14:"14px",
         25:"25px",
         35:"35px",
         52:"52px",

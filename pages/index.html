@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop.co</title>
     <link rel="stylesheet" href="../assets/css/dist/style.css">
     <link rel="stylesheet" href="../assets/css/font.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -27,58 +27,104 @@
                 </div>
             </div>
         </div>
-        <nav class="container-fluid flex items-center py-24 smscreen:justify-between">
-            <div class="flex items-center mdscreen:max-w-[190px] justify-between">
-                <button class="mt-2 hidden mdscreen:flex min-w-5 min-h-5 w-5 h-5">
-                    <img src="../assets/images/svg/hamburger_menu.svg" class="min-w-5 min-h-5" alt="">
-                </button>
-               <div class="navbar_logo mdscreen:ms-2">
-                    <a href="#">
-                        <div class="title title-black font-dark">
-                            <h6>SHOP.CO</h6>
-                        </div>
-                    </a>
-               </div>
-               <div class="navbar_links mx-10">
-                <ul class="flex items-center mt-2 mdscreen:hidden">
-                    <li class="nav-link relative group">
-                        <a href="#" class="flex items-center">
-                            Shop
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
+        <nav class="container-fluid ">
+            <div class="flex items-center py-24 smscreen:justify-between">
+                 <div class="flex items-center mdscreen:max-w-[190px] justify-between">
+                     <button class="mt-2 hidden mdscreen:flex min-w-5 min-h-5 w-5 h-5 hamburger_menu">
+                         <img src="../assets/images/svg/hamburger_menu.svg" class="min-w-5 min-h-5" alt="">
+                     </button>
+                    <div class="navbar_logo mdscreen:ms-2">
+                        <a href="index.html">
+                            <div class="title title-black font-dark">
+                                <h6>SHOP.CO</h6>
+                            </div>
                         </a>
-                        <ul class="absolute left-0 hidden mt-1 p-2 border-2 border-DarkGrey bg-White border rounded-10 group-hover:block">
-                            <li><a href="#" class="drop-downlink">Men</a></li>
-                            <li><a href="#" class="drop-downlink">Women</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-link"><a href="#">On Sale</a></li>
-                    <li class="nav-link"><a href="#">New Arrivals</a></li>
-                    <li class="nav-link"><a href="#">Brands</a></li>
-                </ul>                
-               </div>
-            </div>
-            <div class="mt-2 flex-grow me-10 mdscreen:ms-10 smscreen:hidden">
-                <form class="search_input w-full flex">
-                    <img src="../assets/images/svg/search.svg" class="search_icon" alt="search_icon">
-                    <input type="text" name="search" id="search" placeholder="Search for products...">
-                </form>
-            </div>
-            <div class="flex justify-end mt-2">
-                <a href="#">
-                    <div class="me-3">
-                        <img src="../assets/images/svg/cart_icon.svg" alt="cart_icon">
                     </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <img src="../assets/images/svg/profile_icon.svg" alt="profile_icon">
+                    <div class="navbar_links mx-10">
+                        <ul class="flex items-center mt-2 mdscreen:hidden">
+                            <li class="nav-link relative group">
+                                <a href="#" class="flex items-center">
+                                    Shop
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <ul class="absolute left-0 hidden mt-1 p-2 border-2 border-DarkGrey bg-White border rounded-10 group-hover:block">
+                                    <li><a href="#" class="drop-downlink">Men</a></li>
+                                    <li><a href="#" class="drop-downlink">Women</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-link"><a href="#">On Sale</a></li>
+                            <li class="nav-link"><a href="#">New Arrivals</a></li>
+                            <li class="nav-link"><a href="#">Brands</a></li>
+                        </ul>                
                     </div>
-                </a>
+                    </div>
+                    <div class="mt-2 flex-grow me-10 mdscreen:ms-10 smscreen:hidden">
+                        <form class="search_input w-full flex">
+                            <img src="../assets/images/svg/search.svg" class="search_icon" alt="search_icon">
+                            <input type="text" name="search" id="search" placeholder="Search for products...">
+                        </form>
+                    </div>
+                    <div class="flex justify-end mt-2">
+                        <!-- <a href="cart.html"> -->
+                        <a href="#">
+                            <div class="me-3">
+                                <img src="../assets/images/svg/cart_icon.svg" alt="cart_icon">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="../assets/images/svg/profile_icon.svg" alt="profile_icon">
+                            </div>
+                        </a>
+                    </div>
             </div>
-        </nav>
+         </nav>
    </header>
+
+    <!-- ======================================== SIDEBAR ========================================   -->
+
+   <aside class="h-screen sidebar fixed top-0 -left-full bg-White/70 backdrop-blur-[35px] w-full hidden mdscreen:flex z-[99]">
+        <div class="container-fluid py-4 w-full">
+            <div class="w-full flex justify-end mt-[1rem] cursor-pointer close_btn">
+               <img src="../assets/images/svg/close.svg" alt="">
+            </div>
+            <ul class="sidebar_menu_links h-full flex flex-col justify-center">
+                <li class="nav-link relative ">
+                    <button
+                        onclick="toggleDropdown(event)"
+                        class="flex items-center dropdown-trigger"
+                    >
+                        Shop
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4 ml-2 transition-transform duration-200"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"
+                            />
+                        </svg>
+                    </button>
+                    <ul
+                        class="mt-1 rounded-10 hidden dropdown-menu transition-all ease-out duration-300"
+                    >
+                        <li><a href="#" class="drop-downlink">Men</a></li>
+                        <li><a href="#" class="drop-downlink">Women</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#">On Sale</a></li>
+                <li class="nav-link"><a href="#">New Arrivals</a></li>
+                <li class="nav-link"><a href="#">Brands</a></li>
+            </ul>
+        </div>
+   </aside>
 
    <main>
         <!-- ======================================== HERO SECTION ========================================   -->
@@ -131,10 +177,10 @@
                         <div class="hero_section_img flex justify-center">
                             <img src="../assets/images/png/herosection_img.png" alt="">
                         </div>
-                        <div class="absolute top-[40%]">
+                        <div class="absolute top-[40%] sparkle_one">
                             <img src="../assets/images/svg/sparkle_one.svg" alt="">
                         </div>
-                        <div class="absolute top-[14%] right-[2%] xsscreen:top-[5%] xsscreen:-right-2">
+                        <div class="absolute top-[14%] right-[2%] xsscreen:top-[5%] xsscreen:-right-2 sparkle_two">
                             <img src="../assets/images/svg/sparkle_two.svg" alt="">
                         </div>
                     </div>
@@ -144,6 +190,29 @@
 
         <!-- ======================================== BRAND GALLERY SECTION ========================================   -->
 
+        <!-- <section class="brand_gallery_section py-5rem mdscreen:py-3rem xsscreen:py-2rem bg-Black-100">
+            <div class="container-fluid ">
+                <div class="swiper ">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../assets/images/svg/varsace.svg" alt="Varsace Logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/svg/zara.svg" alt="Zara Logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/svg/gucci.svg" alt="Gucci Logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/svg/prada.svg" alt="Prada Logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/svg/calvin_klien.svg" alt="Calvin Klein Logo">
+                      </div>
+                    </div>
+                </div>                  
+            </div>
+        </section> -->
         <section class="brand_gallery_section py-5rem mdscreen:py-3rem xsscreen:py-2rem bg-Black-100">
             <div class="container-fluid flex justify-between items-center gap-x-8 whitespace-nowrap brand_gallery overflow-hidden">
                 <div>
@@ -618,34 +687,38 @@
                 <h2>Browse by dress style</h2>
             </div>
             <div class="bento_grid_section flex smscreen:flex-col w-full mt-16 xsscreen:mt-7 gap-5">
-                <div class="smscreen:w-full mdscreen:w-1/2 w-2/5 bento_grid_one rounded-20 relative">
-                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-5/12 bento_grid_one rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
-                    <img src="../assets/images/png/bento_grid_one.png" class="relative w-full h-full object-cover rounded-20" alt="">
-                    <div class="title-satoshi font-dark absolute inset-[8%]">
-                        <h4>Casual</h4>
+                <div class="smscreen:w-full mdscreen:w-1/2 w-2/5 rounded-20">
+                    <div class="bento_grid_one w-full h-full">
+                        <img src="../assets/images/png/bento_grid_one.png" class="rounded-20" alt="">
+                        <div class="title-satoshi font-dark absolute inset-[8%]">
+                            <h4>Casual</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="smscreen:w-full mdscreen:w-1/2 w-3/5 bento_grid_two rounded-20 relative">
-                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-7/12 bento_grid_two rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
-                    <img src="../assets/images/png/bento_grid_two.png" class="relative w-full h-full object-cover rounded-20" alt="">
-                    <div class="title-satoshi font-dark absolute inset-[8%]">
-                        <h4>Formal</h4>
+                <div class="smscreen:w-full mdscreen:w-1/2 w-3/5 rounded-20">
+                    <div class="bento_grid_two w-full h-full">
+                        <img src="../assets/images/png/bento_grid_two.png" class="rounded-20" alt="">
+                        <div class="title-satoshi font-dark absolute inset-[8%]">
+                            <h4>Formal</h4>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="bento_grid_section flex smscreen:flex-col w-full gap-5 mt-5">
-                <div class="smscreen:w-full mdscreen:w-1/2 w-3/5 bento_grid_three rounded-20 relative">
-                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-7/12 bento_grid_three rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
-                    <img src="../assets/images/png/bento_grid_three.png" class="relative w-full h-full object-cover rounded-20" alt="">
-                    <div class="title-satoshi font-dark absolute inset-[8%]">
-                        <h4>Party</h4>
+                <div class="smscreen:w-full mdscreen:w-1/2 w-3/5 rounded-20">
+                    <div class="bento_grid_three w-full h-full">
+                        <img src="../assets/images/png/bento_grid_three.png" class="rounded-20" alt="">
+                        <div class="title-satoshi font-dark absolute inset-[8%]">
+                            <h4>Party</h4>
+                        </div>          
                     </div>
                 </div>
-                <div class="smscreen:w-full mdscreen:w-1/2 w-2/5 bento_grid_four rounded-20 relative">
-                <!-- <div class="smscreen:w-full mdscreen:w-6/12 w-5/12 bento_grid_four rounded-20 relative h-[289px] max-h-[289px] xsscreen:h-[190px] xsscreen:max-h-[190px]"> -->
-                    <img src="../assets/images/png/bento_grid_four.png" class="relative w-full h-full object-cover rounded-20" alt="">
-                    <div class="title-satoshi font-dark absolute inset-[8%]">
-                        <h4>Gym</h4>
+                <div class="smscreen:w-full mdscreen:w-1/2 w-2/5 rounded-20">
+                    <div class="bento_grid_four w-full h-full">
+                        <img src="../assets/images/png/bento_grid_four.png" class="rounded-20" alt="">
+                        <div class="title-satoshi font-dark absolute inset-[8%]">
+                            <h4>Gym</h4>
+                        </div>
                     </div>
                 </div>
             </div>

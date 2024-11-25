@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.co | Cart</title>
+    <link rel="stylesheet" href="../assets/css/dist/style.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- ======================================== HEADER ========================================   -->
+
+    <header class="sticky top-0 z-20 header w-full">
+        <div class="innerheader">
+            <div class="container-fluid bg-Black-100 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="content-medium content-white w-full font-400">
+                        <p class="flex w-full justify-center">Sign up and get 20% off to your first order.
+                            <a href="#" class="ms-1">Sign Up Now</a>
+                        </p>
+                    </div>
+                    <button class="hide_inner_div min-w-5 min-h-5 mdscreen:hidden" >
+                        <img src="../assets/images/svg/close.svg" class="min-w-5 min-h-5" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="container-fluid ">
+        <div class="flex items-center py-24 smscreen:justify-between border-b-1 border-Black-10">
+                <div class="flex items-center mdscreen:max-w-[190px] justify-between">
+                    <button class="mt-2 hidden mdscreen:flex min-w-5 min-h-5 w-5 h-5 hamburger_menu">
+                        <img src="../assets/images/svg/hamburger_menu.svg" class="min-w-5 min-h-5" alt="">
+                    </button>
+                    <div class="navbar_logo mdscreen:ms-2">
+                        <a href="index.html">
+                            <div class="title title-black font-dark">
+                                <h6>SHOP.CO</h6>
+                            </div>
+                        </a>
+                    </div>
+                <div class="navbar_links mx-10">
+                    <ul class="flex items-center mt-2 mdscreen:hidden">
+                        <li class="nav-link relative group">
+                            <a href="#" class="flex items-center">
+                                Shop
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <ul class="absolute left-0 hidden mt-1 p-2 border-2 border-DarkGrey bg-White border rounded-10 group-hover:block">
+                                <li><a href="#" class="drop-downlink">Men</a></li>
+                                <li><a href="#" class="drop-downlink">Women</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="#">On Sale</a></li>
+                        <li class="nav-link"><a href="#">New Arrivals</a></li>
+                        <li class="nav-link"><a href="#">Brands</a></li>
+                    </ul>                
+                </div>
+                </div>
+                <div class="mt-2 flex-grow me-10 mdscreen:ms-10 smscreen:hidden">
+                    <form class="search_input w-full flex">
+                        <img src="../assets/images/svg/search.svg" class="search_icon" alt="search_icon">
+                        <input type="text" name="search" id="search" placeholder="Search for products...">
+                    </form>
+                </div>
+                <div class="flex justify-end mt-2">
+                    <a href="cart.html">
+                        <div class="me-3">
+                            <img src="../assets/images/svg/cart_icon.svg" alt="cart_icon">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <img src="../assets/images/svg/profile_icon.svg" alt="profile_icon">
+                        </div>
+                    </a>
+                </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- ======================================== SIDEBAR ========================================   -->
+
+    <aside class="h-screen sidebar fixed top-0 -left-full bg-White/70 backdrop-blur-[35px] w-full hidden mdscreen:flex z-[99]">
+        <div class="container-fluid py-4 w-full">
+            <div class="w-full flex justify-end mt-[1rem] cursor-pointer close_btn">
+            <img src="../assets/images/svg/close.svg" alt="">
+            </div>
+            <ul class="sidebar_menu_links h-full flex flex-col justify-center">
+                <li class="nav-link relative ">
+                    <button
+                        onclick="toggleDropdown(event)"
+                        class="flex items-center dropdown-trigger"
+                    >
+                        Shop
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4 ml-2 transition-transform duration-200"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"
+                            />
+                        </svg>
+                    </button>
+                    <ul
+                        class="mt-1 rounded-10 hidden dropdown-menu transition-all ease-out duration-300"
+                    >
+                        <li><a href="#" class="drop-downlink">Men</a></li>
+                        <li><a href="#" class="drop-downlink">Women</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#">On Sale</a></li>
+                <li class="nav-link"><a href="#">New Arrivals</a></li>
+                <li class="nav-link"><a href="#">Brands</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+        <section class="container-fluid pb-5rem">
+            <div class="breadcrumb pt-7 smscreen:pt-6">
+                <nav class="flex">
+                   <ul class="inline-flex items-center">
+                        <li class="breadcrumb-link content-regular content-black-medium font-medium"><a href="index.html">Home</a></li>
+                        <div class="mx-3">
+                            <img src="../assets/images/svg/breadcrumb_arrow.svg" alt="">
+                        </div>
+                        <li class="breadcrumb-link content-regular content-black font-medium">
+                            <p>Cart</p>
+                        </li>
+                   </ul>
+                </nav>
+            </div>
+            <div class="page_head title title-black font-dark mt-6 mdscreen:mt-4 smscreen:mt-2">
+                <h3>your cart</h3>
+            </div>
+            <div class="cart_section flex w-full gap-5 mt-6 lgscreen:flex-col">
+                <div class="w-7/12 border-1 border-Black-10 p-6 mdscreen:p-4 rounded-20 lgscreen:w-full">
+                    <div class="flex flex-col">
+                        <!-- first  -->
+                        <div class="flex items-start w-full cart_item">
+                            <!-- 1 -->
+                            <div class="min-w-[124px] xsscreen:min-w-[unset] flex justify-center items-center rounded-10 bg-SemiGrey product_image">
+                                <img src="../assets/images/png/white_coloured_tshirt.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <!-- 2 -->
+                           <div class="flex flex-col w-full ms-4 mdscreen:ms-14px">
+                                <div class="flex w-full items-center justify-between">
+                                    <div class="content-large content-black font-dark mt-1 mdscreen:mt-0">
+                                        <p>Gradient Graphic T-shirt</p>
+                                    </div>
+                                    <button>
+                                        <img src="../assets/images/svg/delete.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="w-fit mt-[2px]">
+                                    <div class="content-medium content-black">
+                                        <p>Size: <span class="content-black-medium">Large</span></p>
+                                    </div>
+                                    <div class="content-medium content-black">
+                                        <p>Color: <span class="content-black-medium">White</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <div class="content-xlarge content-black font-dark">
+                                        <p>$145</p>
+                                    </div>
+                                    <div>
+                                        quantity button
+                                    </div>
+                                </div>
+                           </div>
+                           
+                        </div>
+                        
+                        
+                        <!-- second  -->
+                        <div class="flex items-start w-full cart_item">
+                            <div class="min-w-[124px] xsscreen:min-w-[unset] flex justify-center items-center rounded-10 bg-SemiGrey product_image">
+                                <img src="../assets/images/png/check_shirt_cart.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="flex flex-col w-full ms-4 mdscreen:ms-14px">
+                                <div class="flex w-full items-center justify-between">
+                                    <div class="content-large content-black font-dark mt-1 mdscreen:mt-0">
+                                        <p>Checked Shirt</p>
+                                    </div>
+                                    <button>
+                                        <img src="../assets/images/svg/delete.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="w-fit mt-[2px]">
+                                    <div class="content-medium content-black">
+                                        <p>Size: <span class="content-black-medium">Medium</span></p>
+                                    </div>
+                                    <div class="content-medium content-black">
+                                        <p>Color: <span class="content-black-medium">Red</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <div class="content-xlarge content-black font-dark">
+                                        <p>$145</p>
+                                    </div>
+                                    <div>
+                                        quantity button
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <!-- third  -->
+                        <div class="flex items-start w-full cart_item">
+                            <div class="min-w-[124px] xsscreen:min-w-[unset] flex justify-center items-center rounded-10 bg-SemiGrey product_image">
+                                <img src="../assets/images/png/blue_jeans.png" class="rounded-20 aspect-square h-full w-full" alt="">
+                            </div>
+                            <div class="flex flex-col w-full ms-4 mdscreen:ms-14px">
+                                <div class="flex w-full items-center justify-between">
+                                    <div class="content-large content-black font-dark mt-1 mdscreen:mt-0">
+                                        <p>Skinny Fit Jeans</p>
+                                    </div>
+                                    <button>
+                                        <img src="../assets/images/svg/delete.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="w-fit mt-[2px]">
+                                    <div class="content-medium content-black">
+                                        <p>Size: <span class="content-black-medium">Large</span></p>
+                                    </div>
+                                    <div class="content-medium content-black">
+                                        <p>Color: <span class="content-black-medium">Blue</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <div class="content-xlarge content-black font-dark">
+                                        <p>$145</p>
+                                    </div>
+                                    <div>
+                                        quantity button
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-5/12 border-1 border-Black-10 p-6 rounded-20 lgscreen:w-full">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="bg-Black-100 w-full relative rounded-20  p-64 xlscreen:p-56 lgscreen:p-40 mdscreen:p-32 smscreen:p-24">
+               <div class="flex items-center justify-between lgscreen:flex-col lgscreen:items-start">
+                    <div class="max-w-[551px]">
+                        <div class="title title-white font-dark">
+                            <h3>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[349px] smscreen:w-full lgscreen:mt-8">
+                        <form class="form">
+                            <div class="email_input w-full flex">
+                                <img src="../assets/images/svg/email_envelop.svg" class="email_input_icon" alt="email_input_icon">
+                                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            </div>
+                            <div class="w-full mt-4 lgscreen:mt-3">
+                                <button type="submit" class="btn btn-white w-full text-center whitespace-nowrap">Subscribe to Newsletter</button>
+                            </div>
+                        </form>
+                    </div>
+               </div>
+            </div>
+            <div class="footer_content relative mt-52 xsscreen:mt-8">
+               <div class="grid grid-cols-5  lgscreen:grid-cols-4 mdscreen:grid-cols-2 w-full gap-8 justify-items-center lgscreen:justify-items-start">
+                    <div class="max-w-[248px] mdscreen:w-full lgscreen:col-span-4 mdscreen:col-span-2 justify-self-start">
+                        <a href="#">
+                            <img src="../assets/images/png/footer_logo.png" alt="">
+                        </a>
+                        <div class="content-medium content-black-medium mt-25">
+                            <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        </div>
+                        <div class="social_icons flex items-center mt-35">
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/twitter.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/facebook.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/instagram.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center footer_social_icon">
+                                    <img src="../assets/images/svg/github.svg" class="w-2.5 h-2.5" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>Company</p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">About</a>
+                                <a href="#">Features</a>
+                                <a href="#">Works</a>
+                                <a href="#">Career</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>Help</p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">Customer Support</a>
+                                <a href="#">Delivery Details</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>FAQ</p>
+                        </div>
+                         <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">Account</a>
+                                <a href="#">Manage Deliveries</a>
+                                <a href="#">Orders</a>
+                                <a href="#">Payments</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-fit">
+                        <div class="content-regular uppercase font-medium tracking-3">
+                            <p>Resources</p>
+                        </div>
+                         <div class="mt-6">
+                            <div class="flex flex-col footer-links content-regular content-black-medium">
+                                <a href="#">Free eBooks</a>
+                                <a href="#">Development Tutorial</a>
+                                <a href="#">How to - Blog</a>
+                                <a href="#">Youtube Playlist</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="seperator_line relative mb-25 mt-12">
+                <div class="bg-Black-10 h-1px"></div>
+            </div>
+            <div class="relative flex smscreen:flex-col justify-between items-center mt-5">
+                <div class="content-medium content-black-medium">
+                    <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                </div>
+                <div class="flex items-center smscreen:mt-4">
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/visa.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/mastercard.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/paypal.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/apple_pay.png" alt="">
+                    </div>
+                    <div class="payment_methods">
+                        <img src="../assets/images/png/gpay.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

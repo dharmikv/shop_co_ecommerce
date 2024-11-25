@@ -1,4 +1,4 @@
-// ================================ innerheader_hide ================================
+// ============================================================ NEW ARRIVAL SLIDER ============================================================  
 
 var new_arrival_swiper = new Swiper(".new_arrival_swiper", {
     loop:true,
@@ -17,6 +17,9 @@ var new_arrival_swiper = new Swiper(".new_arrival_swiper", {
         },
     }
 });
+
+// ============================================================ TOP SELLING SLIDER ============================================================  
+
 var top_selling_slider = new Swiper(".top_selling_slider", {
     loop:true,  
     slidesPerView: 1.7,
@@ -34,6 +37,9 @@ var top_selling_slider = new Swiper(".top_selling_slider", {
         },
     }
 });
+
+// ============================================================ CUSTOMER REVIEW SLIDER ============================================================  
+
 
 var customer_review_slider = new Swiper(".customer_review_slider",{
     loop:true,
@@ -60,8 +66,31 @@ var customer_review_slider = new Swiper(".customer_review_slider",{
       },
 })
 
+// ============================================================ BRAND SLIDER ============================================================  
+
+  
+// var swiperOptions = {
+//     loop: true,
+//     freeMode: true,
+//     autoplay: {
+//       delay: 0,
+//       // pauseOnMouseEnter:true,
+//       disableOnInteraction:false,
+//     },
+//     loopAddBlankSlides:true,
+//     cssMode:true,
+//     slidesPerView: 5,
+//     speed: 5000,
+//     grabCursor: true,
+//     loopAdditionalSlides: 5,
+//   };
+  
+//   var brand_swiper_slider = new Swiper(".brand_swiper_slider", swiperOptions);
+
+// ============================================================ STICKY HEADER ============================================================  
+  
+
 jQuery(document).ready(function ($) { 
-    // Handle scroll event for sticky header
     if ($(window).scrollTop() >= 70) {
         $('.header').addClass('is-sticky');
         $('.innerheader').addClass('hidden');
@@ -75,8 +104,6 @@ jQuery(document).ready(function ($) {
             $('.innerheader').removeClass('hidden');
         }
     });
-
-    // Adjust container class based on window width
     function adjustContainerClass() {
         const $swiperContent = $(".tesimonial_swiper_content");
         if ($(window).width() <= 1024) {
@@ -85,16 +112,11 @@ jQuery(document).ready(function ($) {
             $swiperContent.removeClass("container-fluid");
         }
     }
-
-    // Run on page load
     adjustContainerClass();
-
-    // Run on window resize
     $(window).on("resize", adjustContainerClass);
 });
 
-
-
+// ============================================================ INNER HEADER ============================================================  
 
 let hide_inner_div_btn = document.querySelector('.hide_inner_div')
 let innerheader = document.querySelector('.innerheader')
@@ -107,3 +129,54 @@ hide_inner_div_btn.addEventListener("click",function(){
     })
 })
 
+
+// ============================================================ SIDEBAR ============================================================  
+
+let close_btn = document.querySelector(".close_btn")
+let sidebar = document.querySelector(".sidebar")
+let sidebarLinks = document.querySelectorAll(".sidebar .nav-link")
+let hamburger_menu = document.querySelector(".hamburger_menu")
+
+
+let sidebar_timeline = gsap.timeline()
+
+sidebar_timeline.to(sidebar, {
+    left: 0,
+    duration: 0.3,
+});
+sidebar_timeline.from(sidebarLinks,{
+    x:-150,
+    duration:0.4,
+    opacity:0,
+    stagger:0.1
+})
+sidebar_timeline.pause()
+
+hamburger_menu.addEventListener("click",function(){
+    sidebar_timeline.play()
+})
+close_btn.addEventListener("click",function(){
+    sidebar_timeline.reverse()
+})
+
+// ============================================================ SIDEBAR DROPDOWN ============================================================  
+
+function toggleDropdown(event) {
+    const button = event.currentTarget;
+    const dropdownMenu = button.nextElementSibling;
+    dropdownMenu.classList.toggle('hidden');
+    const icon = button.querySelector('svg');
+    icon.classList.toggle('rotate-180');
+}
+
+// ============================================================ SPARKLE ANIMATION ============================================================  
+
+
+
+
+gsap.to(".sparkle_one,.sparkle_two",{
+    scale:0.8,
+    duration:0.8,
+    yoyo:true,
+    repeat:-1
+})

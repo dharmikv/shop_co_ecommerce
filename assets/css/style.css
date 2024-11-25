@@ -7,7 +7,6 @@
     @apply mdscreen:px-20 xlscreen:px-40 px-100;
 }
     
-
 /* ========================================================== CONTENT ========================================================== */
 .content-small{
     @apply text-12 leading-16 font-Satoshi
@@ -187,14 +186,31 @@
 }
 @keyframes headerStickyAnimation {
     0% {
-      opacity: 0.5;
-      transform: translateY(-100%);
+        opacity: 0.5;
+        transform: translateY(-100%);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+/* ========================================================== SIDEBAR ========================================================== */
+.sidebar .nav-link{
+    @apply mt-3
+}
+.sidebar .nav-link:first-child{
+    @apply mt-0
+}
+.sidebar_menu_links .nav-link a,
+.sidebar_menu_links .nav-link button{
+    @apply text-Black-100 font-Integral text-24
+}
+.sidebar_menu_links .nav-link .drop-downlink{
+    @apply font-400 mt-0
+}
+.sidebar .close_btn img{
+    filter: brightness(0) saturate(100%) invert(0%) sepia(9%) saturate(7500%) hue-rotate(150deg) brightness(107%) contrast(107%);
+}
 /* ========================================================== INNER_HEADER ========================================================== */
 
 .innerheader a{
@@ -244,10 +260,33 @@ nav ul .nav-link:last-child{
 .rating_star:last-child{
     @apply me-0
 }
-/* .new_arrival_swiper .swiper-slide{
-    @apply xsscreen:!w-fit
-} */
 
+/* ========================================================== BENTO GRID SECTION ========================================================== */
+
+.bento_grid_one{
+    @apply relative pt-[71.01%] w-full h-full
+}
+.bento_grid_one img{
+    @apply absolute top-0 left-0 w-full h-full object-cover
+}
+.bento_grid_two{
+    @apply relative pt-[42.25%] smscreen:pt-[71.01%] w-full h-full
+}
+.bento_grid_two img{
+    @apply absolute top-0 left-0 w-full h-full object-cover
+}
+.bento_grid_three{
+    @apply relative pt-[42.25%] smscreen:pt-[71.01%] w-full h-full
+}
+.bento_grid_three img{
+    @apply absolute top-0 left-0 w-full h-full object-cover
+}
+.bento_grid_four{
+    @apply relative pt-[71.01%] w-full h-full
+}
+.bento_grid_four img{
+    @apply absolute top-0 left-0 w-full h-full object-cover
+}
 /* ========================================================== TESIMONIAL SECTION ========================================================== */
 
 .customer_review_section{
@@ -263,7 +302,7 @@ nav ul .nav-link:last-child{
     @apply me-0
 }
 .customer_review_slider .swiper-slide{
-    @apply !w-fit max-w-[400px] h-auto
+    @apply !w-fit max-w-[400px] lgscreen:w-auto h-auto
 }
 .customer_review_slider .swiper-wrapper{
     @apply !w-full
@@ -306,8 +345,8 @@ nav ul .nav-link:last-child{
 }
 /* .tesimonial_swiper_content{
     @apply relative
-} */
-/* .tesimonial_swiper_content::before{
+}
+.tesimonial_swiper_content::before{
     content: "";
     @apply absolute top-0 left-0 h-full w-[400px] backdrop-blur-[2px] z-10;
     background: url(../images/png/layer_blur.png); 
@@ -319,3 +358,25 @@ nav ul .nav-link:last-child{
     background: url(../images/png/layer_blur.png); 
     background-size: cover;
 } */
+
+
+
+
+.cart_item{
+    @apply pb-6 pt-6 border-b-1 border-b-Black-10
+}
+.cart_item:last-child{
+    @apply border-b-0 pb-0
+}
+.cart_item:first-child{
+    @apply pt-0
+}
+.cart_img{
+    @apply relative w-full h-full pt-[100%]
+}
+.cart_img img{
+    @apply absolute top-0 left-0 w-full h-full
+}
+.qty_btn{
+    @apply py-3 px-20 bg-LightGrey
+}
