@@ -252,6 +252,11 @@ nav ul .nav-link:last-child{
 .email_input input{
     @apply bg-transparent focus-visible:outline-none w-full
 }
+/* ========================================================== BRAND SLIDER ========================================================== */
+.brand_swiper_slider .swiper-wrapper{
+    @apply items-center;
+    transition-timing-function: linear !important; /* Keep linear movement */
+}
 /* ========================================================== NEW ARRIVAL ========================================================== */
 
 .rating_star{
@@ -293,7 +298,7 @@ nav ul .nav-link:last-child{
     @apply overflow-hidden
 }
 .tesimonial_swiper_content{
-    @apply -ml-[6%] -mr-[6%] 2xlscreen:-ml-[24%] 2xlscreen:-mr-[24%] lgscreen:-ml-0 lgscreen:-mr-0
+    @apply -ml-[6%] -mr-[6%] 2xlscreen:-ml-[22%] 2xlscreen:-mr-[22%] lgscreen:-ml-0 lgscreen:-mr-0
 }
 .customer_review_star{
     @apply me-1.5
@@ -302,7 +307,7 @@ nav ul .nav-link:last-child{
     @apply me-0
 }
 .customer_review_slider .swiper-slide{
-    @apply !w-fit max-w-[400px] lgscreen:w-auto h-auto
+    @apply 2xlscreen:w-fit max-w-[400px] lgscreen:w-full h-auto
 }
 .customer_review_slider .swiper-wrapper{
     @apply !w-full

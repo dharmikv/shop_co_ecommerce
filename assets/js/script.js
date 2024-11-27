@@ -43,6 +43,10 @@ var top_selling_slider = new Swiper(".top_selling_slider", {
 
 var customer_review_slider = new Swiper(".customer_review_slider",{
     loop:true,
+    // autoplay:{
+    //     delay:0
+    // },
+    // speed: 5000,
     slidesPerView:1,
     spaceBetween: 30,
     centerSlides:true,
@@ -68,24 +72,23 @@ var customer_review_slider = new Swiper(".customer_review_slider",{
 
 // ============================================================ BRAND SLIDER ============================================================  
 
+var swiperOptions = {
+    loop: true,
+    freeMode: true,
+    cssMode: false,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 5, 
+    speed: 3000,
+    grabCursor: true,
+    loopAdditionalSlides: 5,
+  };
   
-// var swiperOptions = {
-//     loop: true,
-//     freeMode: true,
-//     autoplay: {
-//       delay: 0,
-//       // pauseOnMouseEnter:true,
-//       disableOnInteraction:false,
-//     },
-//     loopAddBlankSlides:true,
-//     cssMode:true,
-//     slidesPerView: 5,
-//     speed: 5000,
-//     grabCursor: true,
-//     loopAdditionalSlides: 5,
-//   };
+  var swiper = new Swiper(".brand_swiper_slider", swiperOptions);
   
-//   var brand_swiper_slider = new Swiper(".brand_swiper_slider", swiperOptions);
 
 // ============================================================ STICKY HEADER ============================================================  
   

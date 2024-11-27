@@ -150,7 +150,7 @@ module.exports = {
         "1rem":"1rem",
       },
       margin:{
-        14:"14px",
+        // 14:"14px",
         25:"25px",
         35:"35px",
         52:"52px",

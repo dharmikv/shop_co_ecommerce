@@ -669,7 +669,7 @@ video {
 }
 
 .mt-14 {
-  margin-top: 14px;
+  margin-top: 3.5rem;
 }
 
 .mt-16 {
@@ -904,6 +904,10 @@ video {
 
 .justify-items-center {
   justify-items: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-5 {
@@ -1715,6 +1719,14 @@ nav ul .nav-link:last-child {
   outline-offset: 2px;
 }
 
+/* ========================================================== BRAND SLIDER ========================================================== */
+
+.brand_swiper_slider .swiper-wrapper {
+  align-items: center;
+  transition-timing-function: linear !important;
+  /* Keep linear movement */
+}
+
 /* ========================================================== NEW ARRIVAL ========================================================== */
 
 .rating_star {
@@ -1820,8 +1832,8 @@ nav ul .nav-link:last-child {
 
 @media (max-width: 1440px) {
   .tesimonial_swiper_content {
-    margin-left: -24%;
-    margin-right: -24%;
+    margin-left: -22%;
+    margin-right: -22%;
   }
 }
 
@@ -1842,14 +1854,19 @@ nav ul .nav-link:last-child {
 
 .customer_review_slider .swiper-slide {
   height: auto;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
   max-width: 400px;
+}
+
+@media (max-width: 1440px) {
+  .customer_review_slider .swiper-slide {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 @media (max-width: 1024px) {
   .customer_review_slider .swiper-slide {
-    width: auto;
+    width: 100%;
   }
 }
 
