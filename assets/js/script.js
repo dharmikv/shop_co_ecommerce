@@ -41,34 +41,75 @@ var top_selling_slider = new Swiper(".top_selling_slider", {
 // ============================================================ CUSTOMER REVIEW SLIDER ============================================================  
 
 
-var customer_review_slider = new Swiper(".customer_review_slider",{
-    loop:true,
-    // autoplay:{
-    //     delay:0
-    // },
-    // speed: 5000,
-    slidesPerView:1,
+// var customer_review_slider = new Swiper(".customer_review_slider",{
+//     loop:true,
+//     slidesPerView:1,
+//     spaceBetween: 30,
+//     centerSlides:true,
+//     breakpoints:{
+//         768:{
+//             slidesPerView:2,
+//         },
+//         1024:{
+//             slidesPerView:3,
+//         },
+//         1280:{
+//             slidesPerView:4,
+//         },
+//         1440:{
+//             slidesPerView:5,
+//         }
+//     },
+//     navigation: {
+//         nextEl: ".tesimonial_right_arrow",
+//         prevEl: ".tesimonial_left_arrow",
+//       },
+// })
+
+var customer_review_slider = new Swiper(".customer_review_slider", {
+    loop: true,
+    slidesPerView: 1,
     spaceBetween: 30,
-    centerSlides:true,
-    breakpoints:{
-        768:{
-            slidesPerView:2,
+    centeredSlides: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
         },
-        1024:{
-            slidesPerView:3,
+        1024: {
+            slidesPerView: 3,
         },
-        1280:{
-            slidesPerView:4,
+        1280: {
+            slidesPerView: 4,
         },
-        1440:{
-            slidesPerView:5,
+        1440: {
+            slidesPerView: 5,
         }
     },
     navigation: {
         nextEl: ".tesimonial_right_arrow",
         prevEl: ".tesimonial_left_arrow",
-      },
-})
+    },
+    on: {
+        slideChange: function () {
+            document.querySelectorAll(".swiper-slide").forEach(slide => slide.classList.remove("blur"));
+
+            const activeIndex = this.activeIndex;
+            const slides = this.slides;
+            const visibleSlidesCount = this.params.slidesPerView;
+
+            const firstVisibleIndex = activeIndex - Math.floor(visibleSlidesCount / 2);
+            const lastVisibleIndex = activeIndex + Math.floor(visibleSlidesCount / 2);
+
+            if (slides[firstVisibleIndex]) {
+                slides[firstVisibleIndex].classList.add("blur");
+            }
+            if (slides[lastVisibleIndex]) {
+                slides[lastVisibleIndex].classList.add("blur");
+            }
+        }
+    }
+});
+
 
 // ============================================================ BRAND SLIDER ============================================================  
 
