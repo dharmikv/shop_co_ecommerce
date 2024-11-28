@@ -47,6 +47,9 @@ var top_selling_slider = new Swiper(".top_selling_slider", {
 //     spaceBetween: 30,
 //     centerSlides:true,
 //     breakpoints:{
+//         640:{
+//             slidesPerView:1
+//         },
 //         768:{
 //             slidesPerView:2,
 //         },
